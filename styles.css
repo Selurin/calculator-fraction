@@ -27,4 +27,14 @@
     margin:25px;
 }
 
+.znaki {
+    border: none; 
+    background: none; 
+    cursor: pointer;
+}
+
+.img-znaki {
+    width: 40px;
+    height: 40px;
+}
 

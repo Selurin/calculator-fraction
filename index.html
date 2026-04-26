@@ -17,15 +17,19 @@
     <p class="info">На нашем сайте представлен удобный инструмент для проведения операций с простыми дробями.</p>
     <input type="number" id="numerator1">
     
-    <select id="operation">
-        <option value="+">+</option>
-        <option value="-">-</option>
-        <option value="*">×</option>
-        <option value="/">÷</option>
-    </select> 
+    <input type="text" id="operation" readonly placeholder="Выберите знак">
 
     <input type="number" id="numerator2">
     <button id="calculate">Вычислить</button>
+
+    <div>
+        <img src="img/plus.png"   onclick="setSign('+')" alt="+" class="img-znaki">
+        <img src="img/minus.png"  onclick="setSign('-')" alt="-" class="img-znaki">
+        <img src="img/multiply.png"   onclick="setSign('*')" alt="*" class="img-znaki">
+        <img src="img/divide.png"    onclick="setSign('/')" alt="/" class="img-znaki">
+
+    </div>
+
     <p>Результат: <span id="result"></span></p>
 
     <script src="script.js"></script>
